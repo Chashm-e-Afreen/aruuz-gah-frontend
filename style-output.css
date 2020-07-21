@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Noto Nastaliq Urdu";
+    src : url("fonts/NotoNastaliqUrdu-Regular.woff2") format('woff2')
+}   
+
+#sidebar {
+	background-color: #1a1a1a;
+	overflow: hidden;
+	z-index: 3;
+	width: 70px;
+}
+    
+    .pusher {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow:auto; 
+    min-width: 1800px;
+    }
+
+    
+
+    .body {
+        overflow: auto;
+    }
+    
+    .burger {
+        position: absolute;
+        display: inline-block;
+        left: 50px;
+        top: 45px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    
+    #output {
+        position: relative;
+        width: 75%;
+        height: 60%;
+        top: 13%;
+        right: 10%;
+        left: 10%;
+        bottom: 20%;
+        overflow: auto;
+    }
+    
+    .islaahInput {
+        font: 21px AGT Nastaliq Pashto;
+        position: relative; 
+        right: 13.7em; 
+        top: 11.3em; 
+        resize: none;
+        height: 353px;
+        width: 650px
+    }
+ 
+    
+    .subtleName {
+        position: absolute;
+        right: 2.75em;
+        top: 2.15em;
+        font: 18px Mehr;
+        color: black;
+        opacity: 0.45
+    }
+    
+    
+    #outputTable {
+        table-layout: fixed;
+        /* border: 0px; */
+        width: 100%;
+        height: 100%;
+        border-spacing: 70px 0px;
+    }
+
+    .GithubLogo {
+        width: 20px; 
+        height: 20px; 
+        position: absolute; 
+        bottom: 50px; 
+        left: 50px; 
+        cursor: pointer
+    }
+    #modalHeader1 {
+        font: 27px Mehr;
+        width: 80%;
+        background: transparent;
+        color: white;
+	}
+	#amb {
+        width: 80%;
+        /* position: absolute;
+        top: 7em; */
+        font: 18px Mehr;
+        overflow: hidden;
+        padding-top: 0%;
+        padding-right: 5em;
+       
+	}
+
+    @media (max-width: 767px) {
+
+        #modalHeader1 {
+            font: 27px Mehr;
+            width: 80%;
+        }
+        #amb {
+            width: 80%;
+            /* position: absolute;
+            top: 7em; */
+            font: 18px Mehr;
+            overflow: hidden;
+            padding-top: 0%;
+            padding-right: 5em;
+        }
+        .pusher {
+            overflow: auto;
+            width: 100vw;
+            min-width: 100vw;
+            min-height: 100vh;
+        }
+        .GithubLogo {
+            left: 35px;
+        }
+        #burgerMenu{
+            left: 35px;
+        }
+    }
+
+    @media (max-width: 767px) and (orientation:landscape) {
+      .subtleName {
+          top: 1em;
+          right: 1em;
+      }
+ 
+    }
