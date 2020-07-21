@@ -62,7 +62,7 @@ async function fetchResponse(input) {
         closestMeterNames = await res5.json();
         let res6 = await fetch('http://161.35.72.255:3000/problematicWords', requestOptions);
         problematicWords = await res6.json();
-        let res7 = await fetch('http://161.35.72.255  :3000/ravani');
+        let res7 = await fetch('http://161.35.72.255:3000/ravani');
         ravaniScore = await res7.json();
     
           localStorage.setItem('words',JSON.stringify(words));
