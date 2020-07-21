@@ -50,19 +50,19 @@ async function fetchResponse(input) {
     'Content-Type': 'application/json;charset=UTF-8'},
      body: input};
 
-        let res1 = await fetch('http://localhost:3000/words', requestOptions);
+        let res1 = await fetch('http://161.35.72.255/:3000/words', requestOptions);
         words = await res1.json();
-        let res2 = await fetch('http://localhost:3000/closestScansion', requestOptions);
+        let res2 = await fetch('http://161.35.72.255/:3000/closestScansion', requestOptions);
         closestScansion = await res2.json();
-        let res3 = await fetch('http://localhost:3000/islah', requestOptions);
+        let res3 = await fetch('http://161.35.72.255/:3000/islah', requestOptions);
         closestMeterKeys = await res3.json();
-        let res4 = await fetch('http://localhost:3000/closestMeters', requestOptions);
+        let res4 = await fetch('http://161.35.72.255/:3000/closestMeters', requestOptions);
         closestMeters = await res4.json();
-        let res5 = await fetch('http://localhost:3000/closestMeterNames', requestOptions);
+        let res5 = await fetch('http://161.35.72.255/:3000/closestMeterNames', requestOptions);
         closestMeterNames = await res5.json();
-        let res6 = await fetch('http://localhost:3000/problematicWords', requestOptions);
+        let res6 = await fetch('http://161.35.72.255/:3000/problematicWords', requestOptions);
         problematicWords = await res6.json();
-        let res7 = await fetch('http://localhost:3000/ravani');
+        let res7 = await fetch('http://161.35.72.255/:3000/ravani');
         ravaniScore = await res7.json();
     
           localStorage.setItem('words',JSON.stringify(words));
