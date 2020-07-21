@@ -62,7 +62,7 @@ async function fetchResponse(input) {
         closestMeterNames = await res5.json();
         let res6 = await fetch('http://161.35.72.255:3000/problematicWords', requestOptions);
         problematicWords = await res6.json();
-        let res7 = await fetch('http://161.35.72.255:3000/ravani');
+        let res7 = await fetch('http://161.35.72.255  :3000/ravani');
         ravaniScore = await res7.json();
     
           localStorage.setItem('words',JSON.stringify(words));
@@ -74,7 +74,7 @@ async function fetchResponse(input) {
           localStorage.setItem('ravani',JSON.stringify(ravaniScore));
 
           document.body.className += " animate__animated animate__slideOutRight animate__fast";
-          window.location.href = "http://127.0.0.1:5500/output-page.html";
+          window.location.href = "output-page.html";
 }
 
 document.getElementById("islahButton").addEventListener("click",getResponse);
