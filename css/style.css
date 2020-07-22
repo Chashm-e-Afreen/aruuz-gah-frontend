@@ -1,0 +1,209 @@
+@font-face {
+	font-family: "Noto Nastaliq Urdu";
+	src: url("fonts/NotoNastaliqUrdu-Regular.woff2") format('woff2');
+	font-family: "Mehr";
+	src: url("fonts/mehr.woff2") format('woff2')
+}
+
+.body {
+	overflow: auto;
+}
+
+.pusher {
+	width: 100%;
+	height: 100%;
+	min-height: 750px;
+	position: relative;
+}
+
+#sidebar {
+	background-color: #1a1a1a;
+	overflow: hidden;
+	z-index: 3;
+	width: 70px;
+}
+.burger {
+	position: absolute;
+	display: inline-block;
+	left: 50px;
+	top: 45px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	z-index: 3;
+}
+
+.fright {
+	position: absolute;
+	float: right;
+	width: 45%;
+	background: #1a1a1a;
+	height: 100%;
+	top: 0;
+	right: 0;
+}
+
+.fleft {
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 55%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.fdown {
+	display: none;
+}
+
+.islaahInput {
+	font: 16px Noto Nastaliq Urdu;
+	position: relative;
+	display: block;
+	right: 5%;
+	bottom: 7%;
+	resize: none;
+	height: 39%;
+	width: 62%;
+	padding: 0.75em 0.75em 0.75em 0.75em;
+}
+
+
+#card {
+	width: 32.3%; 
+	height: 60%; 
+	border-radius: 12px; 
+	position: relative;
+	right: 84%;
+	top: 18%;
+}
+
+
+#islahButton {
+	position: relative;
+	font: 16px Mehr;
+	width: 17%;
+	height: 6%;
+	right: 5%;
+	bottom: 4%;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	background-color: #2e2e2e;
+	padding-top: 1%;
+	color: white;
+}
+
+.subtle-name {
+	position: absolute;
+	right: 3em;
+	top: 2.15em;
+	font: 18px Mehr;
+	color: white;
+	opacity: 0.45;
+}
+
+.GithubLogo {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	cursor: pointer;
+}
+
+#modalHeader1 {
+	font: 2.5rem Mehr;
+	text-align: center;
+	background-color: transparent;
+	color: white;
+}
+
+#amb {
+	font: 2rem Mehr;
+	text-align: center;
+	color: white;
+}
+
+.transition-fade {
+	transition: 0.4s;
+	opacity: 1;
+}
+
+html.is-animating .transition-fade {
+	opacity: 0;
+}
+
+
+@media screen and (max-width: 812px){
+	
+	
+	.fleft {
+		width: 100vw;
+		float: none;
+		display: flex;           /* establish flex container */
+		flex-direction: column;  /* make main axis vertical */
+		justify-content: center; /* center items vertically, in this case */
+		align-items: center;  
+		height: 200vw;
+	}
+	.fright {
+		display: none;
+	}
+	.islaahInput {
+		position: relative;
+		width: 55%;
+		height: 50%;
+		top: -4vw;
+		right: auto;
+		font: initial Noto Nastaliq Urdu !important;
+		resize: none;
+
+	}
+	.pusher {
+		overflow: auto !important;
+		width: 100vw;
+		min-width: 100vw;
+		min-height: 100vh;
+	}
+
+	#islahButton {
+		right: 0.7vw;
+		width: 35vw;
+		top: 7vw;
+		height: 17vw;
+		display: inline-block;
+	}
+
+
+	#modalHeader1 {
+        font: 27px Mehr;
+        width: 80%;
+	}
+	#amb {
+        width: 80%;
+        font: 18px Mehr;
+        padding-right: 5em;
+	}
+
+	.imageLayout{
+		width: 90vw;
+	}
+	#burgerMenu {
+		left: 35px;
+	}
+	.fdown {
+		position: relative;
+		width: 100vw;
+		background: #1a1a1a;
+		height: 100vw;
+		display: flex;
+		align-items: center; 
+		justify-content: center;
+	}
+	.GithubLogo {
+		display: none;
+	}
+}

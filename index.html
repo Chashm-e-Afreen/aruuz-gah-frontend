@@ -2,12 +2,11 @@
 <html dir = "rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">  
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.5/dist/semantic.min.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link href="css/hover-min.css" rel="stylesheet" media="all"> 
-    <link rel="stylesheet" href="https://unpkg.com/mehr/mehr-font.css"> 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.5/dist/semantic.min.js"></script> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -38,7 +37,7 @@
             <div class="line2 hvr-bounce-to-right" style = "display: block; background: #000; width: 15px; height: 2px; margin: 6px"></div>
         </div>
         <div class="fleft">
-                <textarea class= "islaahInput" id= "inputText"> </textarea>
+                <textarea class= "islaahInput" id= "inputText"></textarea>
                 <button class="ui button hvr-shutter-out-horizontal" id ="islahButton" >
                     اصلاح
                 </button>
@@ -47,26 +46,23 @@
             <div class= "subtle-name">
                 عروض گاہ
             </div>
-              <img src = "img/YinTrue.png" id = "card" style= "width: 276.5px; height: 552; border-radius: 12px; position: absolute; top: 15.45em; right: 51.52em; box-shadow: 5px -15px 123px -85px #000000;">
+              <img src = "img/YinTrue-min.png" id = "card">
         </div>
             <a href = "https://github.com/Chashm-e-Afreen/">
               <img src = "img/GitHub-Mark-32px.png" class = "GithubLogo">
             </a>
-           
+            <div class="fdown">
+              <img src = "img/YinTrue-min.png" id = "cardMobile" style= "width: 57vw; height: 115vw; border-radius: 12px; position: relative; bottom: 15vw; box-shadow: 5px -15px 123px -85px #000000; z-index: 2">
+            </div>  
         </div>
-        <div class="fdown">
-          <!-- <div class= "subtle-name">
-              عروض گاہ
-          </div> -->
-            <img src = "img/YinTrue.png" id = "cardMobile" style= "width: 200px; height: 400px; border-radius: 12px; position: absolute; top:-3.3em; left: 5.75em;  box-shadow: 5px -15px 123px -85px #000000; z-index: 2">
-      </div>  
-        <div class="ui basic modal" style ="position: fixed;">
+      
+        <div class="ui basic modal" style="z-index: 0;">
           <div class= "header" style="font: 23px Noto Nastaliq Urdu; text-align:center;">کی بورڈ لئے آؤٹ</div>
           <div class= "imageLayout" >
-            <img src = "img/KeyboardLayout.png" id = "keyboardImage" style = "width: 100%">
+            <img src = "img/KeyboardLayout.png" id = "keyboardImage" style = "width: 100%;">
           </div>
         </div>
-        <div class="ui modal ambitions" style = "background-color: transparent; color: white; position: fixed;">
+        <div class="ui modal ambitions" style = "background-color: transparent; color: white; z-index: 0 ">
           <div class= "header" id= "modalHeader1">اغراض و مقاصد</div>
           <div class= "ambitions" id= "amb" dir = "rtl">
             <br>
