@@ -1,8 +1,10 @@
 @font-face {
+	font-family: "Mehr";
+	src: url("fonts/mehr.woff2") format('woff2');
+}
+@font-face {
 	font-family: "Noto Nastaliq Urdu";
 	src: url("fonts/NotoNastaliqUrdu-Regular.woff2") format('woff2');
-	font-family: "Mehr";
-	src: url("fonts/mehr.woff2") format('woff2')
 }
 
 .body {
