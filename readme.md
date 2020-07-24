@@ -39,7 +39,7 @@ Just clone the project and open index.html in a browser.
 If you want to locally run the system I'll suggest downloading the [backend](https://github.com/Chashm-e-Afreen/aruuz-gah-backend/) too. Then you could just run the go binary and head over to the frontend localhost and use the programme like you do online. Using the programme only requires you to enter text in the given textbox and it would generate the appropriate ouptut once you click the button underneath the textarea.
 
 ## ⛏️ Built With <a name = "built_using"></a>
-- [Fomantic UI](fomantic-ui.com/) - Framework
+- [Fomantic UI](fomantic-ui.com/) - UI Framework
 - [Animate CSS](https://animate.style/) - Animation Library
 - [Hover](https://ianlunn.github.io/Hover/) - Hovering Effects
 - [Yauk](https://github.com/awaisathar/yauk) - JQuery Plugin for Urdu Keyboard
