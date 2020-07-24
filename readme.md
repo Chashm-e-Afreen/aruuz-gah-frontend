@@ -17,7 +17,7 @@
 <p align="center"> 
         An online helper for learners of Urdu prosody.
         <br>
-        <a href= "aruuz.rocks/">Aruuz Rocks!</a>
+        <a href= "https://aruuz.rocks/">Aruuz Rocks!</a>
     <br> 
 </p>
 
