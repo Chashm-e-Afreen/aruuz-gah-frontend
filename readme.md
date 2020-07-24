@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img src="https://github.com/Chashm-e-Afreen/Resources/blob/master/Screenshot_20200723_210631.png" alt="Project logo"></a>
+ <img src="https://github.com/Chashm-e-Afreen/Resources/blob/master/Screenshot_20200724_183550.pngg" alt="Web UI"></a>
 </p>
 
 <h3 align="center">Aruuz Gah</h3>
