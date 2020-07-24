@@ -50,4 +50,4 @@ If you want to locally run the system I'll suggest downloading the [frontend](ht
 - Find my writings at my [blog](chashm-e-afreen.github.io/)
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-- Folks at UrduWeb for inspiration and encouragememnt
+- Folks at UrduWeb for inspiration and encouragement
