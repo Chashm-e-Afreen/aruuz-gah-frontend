@@ -1,8 +1,4 @@
-var perfEntries = performance.getEntriesByType("navigation"); //reloads if back button is pressed
 
-if (perfEntries[0].type === "back_forward") {
-    location.reload(true);
-}
   
  $('#inputText').setUrduInput({urduNumerals: true}); //sets the layout to Urdu
 
@@ -54,31 +50,29 @@ async function fetchResponse(input) {
     'Content-Type': 'application/json;charset=UTF-8'},
      body: input};
 
-        let res1 = await fetch('https://aruuz.rocks:3000/words', requestOptions);
-        words = await res1.json();
-        let res2 = await fetch('https://aruuz.rocks:3000/closestScansion', requestOptions);
-        closestScansion = await res2.json();
-        let res3 = await fetch('https://aruuz.rocks:3000/islah', requestOptions);
-        closestMeterKeys = await res3.json();
-        let res4 = await fetch('https://aruuz.rocks:3000/closestMeters', requestOptions);
-        closestMeters = await res4.json();
-        let res5 = await fetch('https://aruuz.rocks:3000/closestMeterNames', requestOptions);
-        closestMeterNames = await res5.json();
-        let res6 = await fetch('https://aruuz.rocks:3000/problematicWords', requestOptions);
-        problematicWords = await res6.json();
-        let res7 = await fetch('https://aruuz.rocks:3000/ravani');
-        ravaniScore = await res7.json();
-    
-          localStorage.setItem('words',JSON.stringify(words));
-          localStorage.setItem('scansion',JSON.stringify(closestScansion));
-          localStorage.setItem('islah',JSON.stringify(closestMeterKeys));
-          localStorage.setItem('meters',JSON.stringify(closestMeters));
-          localStorage.setItem('names',JSON.stringify(closestMeterNames));
-          localStorage.setItem('prob',JSON.stringify(problematicWords));
-          localStorage.setItem('ravani',JSON.stringify(ravaniScore));
+   
+     let response =  await fetch('https://aruuz.rocks:3000/words', requestOptions);
+     let responseText = await response.text();
+     //split the newline delimited JSON
+     let res = responseText.split("\n");
+   
+         words = JSON.parse(res[0]);
+         closestScansion =  JSON.parse(res[1]);
+         islah =  JSON.parse(res[2]);
+         closestMeters =  JSON.parse(res[3]);
+         closestMeterNames =  JSON.parse(res[4]);
+         problematicWords =  JSON.parse(res[5]);
+         ravaniScore =  JSON.parse(res[6]);
+         localStorage.setItem('words',JSON.stringify(words));
+         localStorage.setItem('scansion',JSON.stringify(closestScansion));
+         localStorage.setItem('islah',JSON.stringify(islah));
+         localStorage.setItem('meters',JSON.stringify(closestMeters));
+         localStorage.setItem('names',JSON.stringify(closestMeterNames));
+         localStorage.setItem('prob',JSON.stringify(problematicWords));
+         localStorage.setItem('ravani',JSON.stringify(ravaniScore));
 
-          document.body.className += " animate__animated animate__slideOutRight animate__fast";
-          window.location.href = "output-page.html";
+         document.body.className += " animate__animated animate__slideOutRight animate__fast";
+         window.location.href = "output-page.html";         
 }
 
 document.getElementById("islahButton").addEventListener("click",getResponse);

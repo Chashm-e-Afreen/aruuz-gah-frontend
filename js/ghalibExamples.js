@@ -1,3 +1,9 @@
+var perfEntries = performance.getEntriesByType("navigation"); //reloads if back button is pressed
+
+if (perfEntries[0].type === "back_forward") {
+    location.reload(true);
+}
+
 function toggleSidebar() {
     $('.ui.sidebar')
     .sidebar('toggle')

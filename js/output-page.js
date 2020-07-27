@@ -54,7 +54,7 @@
 
         behr.style.cssText =  "padding: auto auto"
         var cellBehr = document.createElement("td");
-        cellBehr.style.cssText = "color: #0f2862 ; font: 20px Mehr; text-align: right; vertical-align: top; display: block ruby; width: 100%";
+        cellBehr.style.cssText = "color: #0f2862 ; font: 20px Mehr; text-align: right; vertical-align: top; display: block; width: max-content";
         cellBehr.innerText = names[i];
         behr.appendChild(cellBehr);
         body1.appendChild(behr);
@@ -68,23 +68,27 @@
        
 
         var afaeel = document.createElement("tr");
-        afaeel.style.cssText = "padding-top: 10px; color: #ad1457; font: 20px Mehr; text-align: right; display: block ruby; width: 100%";
+        afaeel.style.cssText = "padding-top: 10px; color: #ad1457; font: 20px Mehr; text-align: right; display: block; width: max-content";
         afaeel.innerText = meters[i];
         body1.appendChild(afaeel);
 
         var wordRow = document.createElement("tr");
         wordRow.style.cssText = "vertical-align:"
+        
         for (let j = 0; j<words[i].length; ++j) {
-            // if (words[i][j] == "و" && problematicWords[i].length<words[i].length) {
-            //     problematicWords[i].splice(j,0,false)
-            // }
             var word = document.createElement("td");
+            var link = document.createElement("a");
+            link.innerText = words[i][j];
+            link.target ="_blank";
+            link.style.cursor = "pointer";
+            link.href = "http://udb.gov.pk/result.php?search=" + words[i][j];
             if (problematicWords[i][j] == false) {
-                word.style.cssText = "color: #1f6521; text-align: right; font: 20px Mehr"
+                link.style.cssText = "color: #1f6521; text-align: right; font: 20px Mehr"
             } else {
-                word.style.cssText = "color: #e2352e; text-align: right; font: 16px Mehr"
+                link.style.cssText = "color: #e2352e; text-align: right; font: 16px Mehr"
             }
-            word.innerText = words[i][j];
+           
+            word.appendChild(link);
             wordRow.appendChild(word);
         }
 
@@ -97,8 +101,7 @@
         taqtiLabel.innerText = "تقطیع";
         taqtiLabel.style.cssText = "font: 17px Mehr; width: 6em; height: 2.5em ; text-align: center; background-color: #f5f5f5  ; color: #1a1a1a";
         body1.appendChild(taqtiLabel)
-        // scansionRow.appendChild(tagTaqti);
-        // this.console.log(scansion[i].length)
+  
         for (let j = 0; j<scansion[i].length; ++j) {
      
             var scansionCell = document .createElement("td");
