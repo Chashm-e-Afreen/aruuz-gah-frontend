@@ -47,7 +47,7 @@ If you want to locally run the system I'll suggest downloading the [backend](htt
 ## ✍️ Authors <a name = "authors"></a>
 - [@Muhammad Rehan Qureshi](https://github.com/Chashm-e-Afreen/) 
 - Poet Prosodist Critic Programmer Electrical Engineering Student at SEECS-NUST
-- Find my writings at my [blog](chashm-e-afreen.github.io/)
+- Find my writings at my [blog](https://chashm-e-afreen.github.io/)
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 - Folks at UrduWeb for inspiration and encouragement
